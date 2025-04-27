@@ -11,7 +11,7 @@ import (
 	"os"
 
 	"golang.org/x/sys/unix"
-	"gotest.tools/gotestsum/internal/log"
+	"github.com/v1v/gotestsum/internal/log"
 )
 
 type terminal struct {

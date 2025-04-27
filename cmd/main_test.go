@@ -11,12 +11,12 @@ import (
 	"testing"
 
 	"github.com/fatih/color"
-	"gotest.tools/gotestsum/testjson"
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/assert/cmp"
-	"gotest.tools/v3/env"
-	"gotest.tools/v3/golden"
-	"gotest.tools/v3/skip"
+	"github.com/v1v/gotestsum/testjson"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/assert/cmp"
+	"github.com/v1v/v3/env"
+	"github.com/v1v/v3/golden"
+	"github.com/v1v/v3/skip"
 )
 
 func TestUsage_WithFlagsFromSetupFlags(t *testing.T) {

@@ -7,8 +7,8 @@ It is designed to work well for both local development, and for automation like 
 ## Install
 
 Download a binary from [releases](https://github.com/gotestyourself/gotestsum/releases), or build from
-source with `go install gotest.tools/gotestsum@latest`. To run without installing use
-`go run gotest.tools/gotestsum@latest`.
+source with `go install github.com/v1v/gotestsum@latest`. To run without installing use
+`go run github.com/v1v/gotestsum@latest`.
 
 ## Documentation
 
@@ -154,12 +154,12 @@ TESTS_TOTAL             # number of tests run
 To get more details about the test run, such as failure messages or the full list of failed
 tests, run `gotestsum` with either a `--jsonfile` or `--junitfile` and parse the
 file from the post-run-command. The
-[gotestsum/testjson](https://pkg.go.dev/gotest.tools/gotestsum/testjson?tab=doc)
+[gotestsum/testjson](https://pkg.go.dev/github.com/v1v/gotestsum/testjson?tab=doc)
 package may be used to parse the JSON file output.
 
 **Example: desktop notifications**
 
-First install the example notification command with `go get gotest.tools/gotestsum/contrib/notify`.
+First install the example notification command with `go get github.com/v1v/gotestsum/contrib/notify`.
 The command will be downloaded to `$GOPATH/bin` as `notify`. Note that this
 example `notify` command only works on Linux with `notify-send` and on macOS with
 [terminal-notifer](https://github.com/julienXX/terminal-notifier) installed.
@@ -348,8 +348,8 @@ See `gotestsum tool slowest --help`.
 $ gotestsum --format dots --jsonfile json.log
 [.]····↷··↷·
 $ gotestsum tool slowest --jsonfile json.log --threshold 500ms
-gotest.tools/example TestSomething 1.34s
-gotest.tools/example TestSomethingElse 810ms
+github.com/v1v/example TestSomething 1.34s
+github.com/v1v/example TestSomethingElse 810ms
 ```
 
 **Example: skipping slow tests with `go test --short`**
@@ -398,7 +398,7 @@ While in watch mode, pressing some keys will perform an action:
 * `r` will run tests for the previous event.
   Added in version 1.6.1.
 * `u` will run tests for the previous event, with the `-update` flag added.
-  Many [golden](https://gotest.tools/v3/golden) packages use this flag to automatically
+  Many [golden](https://github.com/v1v/v3/golden) packages use this flag to automatically
   update expected values of tests.
   Added in version 1.8.1.
 * `d` will run tests for the previous event using `dlv test`, allowing you to 
@@ -454,10 +454,10 @@ Please open a GitHub issue or pull request to add or remove projects from this l
 
 ## Development
 
-[![Godoc](https://godoc.org/gotest.tools/gotestsum?status.svg)](https://pkg.go.dev/gotest.tools/gotestsum?tab=subdirectories)
+[![Godoc](https://godoc.org/github.com/v1v/gotestsum?status.svg)](https://pkg.go.dev/github.com/v1v/gotestsum?tab=subdirectories)
 [![CircleCI](https://circleci.com/gh/gotestyourself/gotestsum/tree/main.svg?style=shield)](https://circleci.com/gh/gotestyourself/gotestsum/tree/main)
 [![Go Recipes](https://raw.githubusercontent.com/nikolaydubina/go-recipes/main/badge.svg?raw=true)](https://github.com/nikolaydubina/go-recipes)
-[![Go Reportcard](https://goreportcard.com/badge/gotest.tools/gotestsum)](https://goreportcard.com/report/gotest.tools/gotestsum)
+[![Go Reportcard](https://goreportcard.com/badge/github.com/v1v/gotestsum)](https://goreportcard.com/report/github.com/v1v/gotestsum)
 
 
 Pull requests and bug reports are welcome! Please open an issue first for any

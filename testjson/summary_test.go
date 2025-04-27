@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/golden"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/golden"
 )
 
 func TestSummary_String(t *testing.T) {

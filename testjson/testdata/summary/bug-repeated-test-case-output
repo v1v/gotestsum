@@ -48,11 +48,11 @@
 === Failed
 === FAIL: testjson/internal/badmain  (0.00s)
 sometimes main can exit 2
-FAIL	gotest.tools/gotestsum/testjson/internal/badmain	0.001s
+FAIL	github.com/v1v/gotestsum/testjson/internal/badmain	0.001s
 sometimes main can exit 2
-FAIL	gotest.tools/gotestsum/testjson/internal/badmain	0.001s
+FAIL	github.com/v1v/gotestsum/testjson/internal/badmain	0.001s
 sometimes main can exit 2
-FAIL	gotest.tools/gotestsum/testjson/internal/badmain	0.001s
+FAIL	github.com/v1v/gotestsum/testjson/internal/badmain	0.001s
 
 === FAIL: testjson/internal/parallelfails TestNestedParallelFailures/a (0.00s)
     fails_test.go:50: failed sub a

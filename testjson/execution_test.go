@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/golden"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/golden"
 )
 
 func TestExecution_Add_PackageCoverage(t *testing.T) {
@@ -112,7 +112,7 @@ func TestPackage_AddEvent(t *testing.T) {
 	var testCases = []testCase{
 		{
 			name:  "coverage with -cover",
-			event: `{"Action":"output","Package":"gotest.tools/testing","Output":"coverage: 4.2% of statements\n"}`,
+			event: `{"Action":"output","Package":"github.com/v1v/testing","Output":"coverage: 4.2% of statements\n"}`,
 			expected: Package{
 				coverage: "coverage: 4.2% of statements",
 				output:   pkgOutput(0, "coverage: 4.2% of statements\n"),
@@ -120,7 +120,7 @@ func TestPackage_AddEvent(t *testing.T) {
 		},
 		{
 			name:  "coverage with -coverpkg",
-			event: `{"Action":"output","Package":"gotest.tools/testing","Output":"coverage: 7.5% of statements in ./testing\n"}`,
+			event: `{"Action":"output","Package":"github.com/v1v/testing","Output":"coverage: 7.5% of statements in ./testing\n"}`,
 			expected: Package{
 				coverage: "coverage: 7.5% of statements in ./testing",
 				output:   pkgOutput(0, "coverage: 7.5% of statements in ./testing\n"),
@@ -128,20 +128,20 @@ func TestPackage_AddEvent(t *testing.T) {
 		},
 		{
 			name:     "package failed",
-			event:    `{"Action":"fail","Package":"gotest.tools/testing","Elapsed":0.012}`,
+			event:    `{"Action":"fail","Package":"github.com/v1v/testing","Elapsed":0.012}`,
 			expected: Package{action: ActionFail, elapsed: 12 * time.Millisecond},
 		},
 		{
 			name:  "package is cached",
-			event: `{"Action":"output","Package":"gotest.tools/testing","Output":"ok  \tgotest.tools/testing\t(cached)\n"}`,
+			event: `{"Action":"output","Package":"github.com/v1v/testing","Output":"ok  \tgithub.com/v1v/testing\t(cached)\n"}`,
 			expected: Package{
 				cached: true,
-				output: pkgOutput(0, "ok  \tgotest.tools/testing\t(cached)\n"),
+				output: pkgOutput(0, "ok  \tgithub.com/v1v/testing\t(cached)\n"),
 			},
 		},
 		{
 			name:     "package pass",
-			event:    `{"Action":"pass","Package":"gotest.tools/testing","Elapsed":0.012}`,
+			event:    `{"Action":"pass","Package":"github.com/v1v/testing","Elapsed":0.012}`,
 			expected: Package{action: ActionPass, elapsed: 12 * time.Millisecond},
 		},
 	}

@@ -5,8 +5,8 @@ import (
 	"io"
 	"testing"
 
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/golden"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/golden"
 )
 
 // go-test-json files are generated using the following command:

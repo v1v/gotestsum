@@ -48,7 +48,7 @@ _docker-build-dev() {
     set -e
     local idfile=".plsdo/docker-build-dev-image-id-${GOLANG_VERSION-default}"
     local dockerfile=.project/Dockerfile
-    local tag=gotest.tools/gotestsum/builder
+    local tag=github.com/v1v/gotestsum/builder
     if [ -f "$idfile" ] && [ "$dockerfile" -ot "$idfile" ]; then
         cat "$idfile"
         return 0

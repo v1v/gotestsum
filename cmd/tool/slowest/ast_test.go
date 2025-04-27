@@ -6,7 +6,7 @@ import (
 	"go/token"
 	"testing"
 
-	"gotest.tools/v3/assert"
+	"github.com/v1v/v3/assert"
 )
 
 func TestParseSkipStatement_Preset_testingShort(t *testing.T) {

@@ -1,6 +1,6 @@
-gotest.tools/gotestsum/testjson/internal/badmain:
+github.com/v1v/gotestsum/testjson/internal/badmain:
 
-gotest.tools/gotestsum/testjson/internal/good:
+github.com/v1v/gotestsum/testjson/internal/good:
  ✓ Nested success (0.00s)
  ✓ Nested success a (0.00s)
  ✓ Nested success a sub (0.00s)
@@ -20,7 +20,7 @@ gotest.tools/gotestsum/testjson/internal/good:
  ∅ Skipped wit log (0.00s)
  ✓ With stderr (0.00s)
 
-gotest.tools/gotestsum/testjson/internal/stub:
+github.com/v1v/gotestsum/testjson/internal/stub:
  ✖ Failed (0.00s)
  ✖ Failed with stderr (0.00s)
  ✓ Nested success (0.00s)

@@ -1,5 +1,5 @@
 sometimes main can exit 2
-FAIL	gotest.tools/gotestsum/testjson/internal/badmain	0.001s
+FAIL	github.com/v1v/gotestsum/testjson/internal/badmain	0.001s
 -test.shuffle 123456
 === RUN   TestPassedWithLog
     good_test.go:15: this is a log
@@ -49,7 +49,7 @@ this is stderr
 === CONT  TestParallelTheThird
 --- PASS: TestParallelTheThird (0.00s)
 PASS
-ok  	gotest.tools/gotestsum/testjson/internal/good	0.020s
+ok  	github.com/v1v/gotestsum/testjson/internal/good	0.020s
 -test.shuffle 123456
 === RUN   TestParallelTheSecond
 === PAUSE TestParallelTheSecond
@@ -100,7 +100,7 @@ this is stderr
     fails_test.go:41: failed the third
 --- FAIL: TestParallelTheThird (0.00s)
 FAIL
-FAIL	gotest.tools/gotestsum/testjson/internal/parallelfails	0.020s
+FAIL	github.com/v1v/gotestsum/testjson/internal/parallelfails	0.020s
 -test.shuffle 123456
 === RUN   TestPassedWithStdout
 this is a Print
@@ -177,4 +177,4 @@ this is stderr
 === CONT  TestParallelTheSecond
 --- PASS: TestParallelTheSecond (0.01s)
 FAIL
-FAIL	gotest.tools/gotestsum/testjson/internal/withfails	0.020s
+FAIL	github.com/v1v/gotestsum/testjson/internal/withfails	0.020s

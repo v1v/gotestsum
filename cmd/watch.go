@@ -7,8 +7,8 @@ import (
 	"os"
 	"os/exec"
 
-	"gotest.tools/gotestsum/internal/filewatcher"
-	"gotest.tools/gotestsum/testjson"
+	"github.com/v1v/gotestsum/internal/filewatcher"
+	"github.com/v1v/gotestsum/testjson"
 )
 
 func runWatcher(opts *options) error {

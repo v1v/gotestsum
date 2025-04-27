@@ -14,8 +14,8 @@ import (
 
 	"github.com/dnephin/pflag"
 	"github.com/fatih/color"
-	"gotest.tools/gotestsum/internal/log"
-	"gotest.tools/gotestsum/testjson"
+	"github.com/v1v/gotestsum/internal/log"
+	"github.com/v1v/gotestsum/testjson"
 )
 
 var version = "dev"
@@ -134,7 +134,7 @@ func usage(out io.Writer, name string, flags *pflag.FlagSet) {
     %[1]s [flags] [--] [go test flags]
     %[1]s [command]
 
-See https://pkg.go.dev/gotest.tools/gotestsum#section-readme for detailed documentation.
+See https://pkg.go.dev/github.com/v1v/gotestsum#section-readme for detailed documentation.
 
 Flags:
 `, name)

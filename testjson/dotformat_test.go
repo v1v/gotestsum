@@ -10,12 +10,12 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"gotest.tools/gotestsum/internal/dotwriter"
-	"gotest.tools/gotestsum/internal/text"
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/assert/cmp"
-	"gotest.tools/v3/golden"
-	"gotest.tools/v3/skip"
+	"github.com/v1v/gotestsum/internal/dotwriter"
+	"github.com/v1v/gotestsum/internal/text"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/assert/cmp"
+	"github.com/v1v/v3/golden"
+	"github.com/v1v/v3/skip"
 )
 
 func TestScanTestOutput_WithDotsFormatter(t *testing.T) {

@@ -1,5 +1,5 @@
 sometimes main can exit 2
-FAIL	gotest.tools/gotestsum/testjson/internal/badmain	0.001s
+FAIL	github.com/v1v/gotestsum/testjson/internal/badmain	0.001s
 === RUN   TestPassed
 --- PASS: TestPassed (0.00s)
 === RUN   TestPassedWithLog
@@ -49,7 +49,7 @@ this is stderr
 --- PASS: TestParallelTheFirst (0.01s)
 PASS
 coverage: 0.0% of statements
-ok  	gotest.tools/gotestsum/testjson/internal/good	0.011s	coverage: 0.0% of statements
+ok  	github.com/v1v/gotestsum/testjson/internal/good	0.011s	coverage: 0.0% of statements
 === RUN   TestPassed
 --- PASS: TestPassed (0.00s)
 === RUN   TestPassedWithLog
@@ -123,4 +123,4 @@ this is stderr
 --- PASS: TestParallelTheFirst (0.01s)
 FAIL
 coverage: 0.0% of statements
-FAIL	gotest.tools/gotestsum/testjson/internal/stub	0.011s
+FAIL	github.com/v1v/gotestsum/testjson/internal/stub	0.011s

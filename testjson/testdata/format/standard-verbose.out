@@ -1,8 +1,8 @@
 sometimes main can exit 2
-FAIL	gotest.tools/gotestsum/testjson/internal/badmain	0.001s
+FAIL	github.com/v1v/gotestsum/testjson/internal/badmain	0.001s
 testing: warning: no tests to run
 PASS
-ok  	gotest.tools/gotestsum/testjson/internal/empty	(cached) [no tests to run]
+ok  	github.com/v1v/gotestsum/testjson/internal/empty	(cached) [no tests to run]
 === RUN   TestPassed
 --- PASS: TestPassed (0.00s)
 === RUN   TestPassedWithLog
@@ -51,7 +51,7 @@ this is stderr
 --- PASS: TestParallelTheThird (0.00s)
 --- PASS: TestParallelTheSecond (0.01s)
 PASS
-ok  	gotest.tools/gotestsum/testjson/internal/good	(cached)
+ok  	github.com/v1v/gotestsum/testjson/internal/good	(cached)
 === RUN   TestPassed
 --- PASS: TestPassed (0.00s)
 === RUN   TestPassedWithLog
@@ -101,7 +101,7 @@ this is stderr
     fails_test.go:35: failed the second
 --- FAIL: TestParallelTheSecond (0.01s)
 FAIL
-FAIL	gotest.tools/gotestsum/testjson/internal/parallelfails	0.020s
+FAIL	github.com/v1v/gotestsum/testjson/internal/parallelfails	0.020s
 === RUN   TestPassed
 --- PASS: TestPassed (0.00s)
 === RUN   TestPassedWithLog
@@ -177,4 +177,4 @@ this is stderr
 === CONT  TestParallelTheSecond
 --- PASS: TestParallelTheSecond (0.01s)
 FAIL
-FAIL	gotest.tools/gotestsum/testjson/internal/withfails	0.020s
+FAIL	github.com/v1v/gotestsum/testjson/internal/withfails	0.020s

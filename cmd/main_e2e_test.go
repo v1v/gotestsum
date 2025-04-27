@@ -11,14 +11,14 @@ import (
 	"testing"
 	"time"
 
-	"gotest.tools/gotestsum/internal/text"
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/env"
-	"gotest.tools/v3/fs"
-	"gotest.tools/v3/golden"
-	"gotest.tools/v3/icmd"
-	"gotest.tools/v3/poll"
-	"gotest.tools/v3/skip"
+	"github.com/v1v/gotestsum/internal/text"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/env"
+	"github.com/v1v/v3/fs"
+	"github.com/v1v/v3/golden"
+	"github.com/v1v/v3/icmd"
+	"github.com/v1v/v3/poll"
+	"github.com/v1v/v3/skip"
 )
 
 func TestMain(m *testing.M) {

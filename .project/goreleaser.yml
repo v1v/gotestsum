@@ -21,7 +21,7 @@ builds:
       - s390x
       - ppc64le
     env: [CGO_ENABLED=0]
-    ldflags: ["-s -w -X gotest.tools/gotestsum/cmd.version={{.Version}}"]  
+    ldflags: ["-s -w -X github.com/v1v/gotestsum/cmd.version={{.Version}}"]  
     ignore:
       - goos: darwin
         goarch: s390x

@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"gotest.tools/gotestsum/testjson"
+	"github.com/v1v/gotestsum/testjson"
 )
 
 type rerunOpts struct {

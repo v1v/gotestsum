@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"gotest.tools/gotestsum/testjson"
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/golden"
+	"github.com/v1v/gotestsum/testjson"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/golden"
 )
 
 func TestWrite(t *testing.T) {

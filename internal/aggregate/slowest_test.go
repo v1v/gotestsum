@@ -9,8 +9,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"gotest.tools/gotestsum/testjson"
-	"gotest.tools/v3/assert"
+	"github.com/v1v/gotestsum/testjson"
+	"github.com/v1v/v3/assert"
 )
 
 func TestSlowest(t *testing.T) {

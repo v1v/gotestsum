@@ -11,8 +11,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/fs"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/fs"
 )
 
 func TestWatch(t *testing.T) {

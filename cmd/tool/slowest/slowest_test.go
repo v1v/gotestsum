@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"testing"
 
-	"gotest.tools/v3/env"
-	"gotest.tools/v3/golden"
+	"github.com/v1v/v3/env"
+	"github.com/v1v/v3/golden"
 )
 
 func TestUsage_WithFlagsFromSetupFlags(t *testing.T) {

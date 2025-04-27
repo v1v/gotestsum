@@ -28,13 +28,13 @@ main.main()
 goroutine 6 [sleep]:
 time.Sleep(0x4a817c800)
 	/usr/lib/go/src/runtime/time.go:195 +0x135
-gotest.tools/gotestsum/example.TestSleepsTooLong(0x0?)
+github.com/v1v/gotestsum/example.TestSleepsTooLong(0x0?)
 	/home/daniel/pers/code/gotestsum/example/testing_test.go:9 +0x25
 testing.tRunner(0xc000007860, 0x533d98)
 	/usr/lib/go/src/testing/testing.go:1576 +0x10b
 created by testing.(*T).Run
 	/usr/lib/go/src/testing/testing.go:1629 +0x3ea
-FAIL	gotest.tools/gotestsum/example	2.003s
+FAIL	github.com/v1v/gotestsum/example	2.003s
 
 === FAIL: example TestSleepsTooLong (unknown)
 

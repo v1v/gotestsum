@@ -8,13 +8,13 @@ import (
 	"strings"
 	"testing"
 
-	"gotest.tools/gotestsum/internal/junitxml"
-	"gotest.tools/gotestsum/internal/text"
-	"gotest.tools/gotestsum/testjson"
-	"gotest.tools/v3/assert"
-	"gotest.tools/v3/assert/cmp"
-	"gotest.tools/v3/fs"
-	"gotest.tools/v3/golden"
+	"github.com/v1v/gotestsum/internal/junitxml"
+	"github.com/v1v/gotestsum/internal/text"
+	"github.com/v1v/gotestsum/testjson"
+	"github.com/v1v/v3/assert"
+	"github.com/v1v/v3/assert/cmp"
+	"github.com/v1v/v3/fs"
+	"github.com/v1v/v3/golden"
 )
 
 func TestPostRunHook(t *testing.T) {

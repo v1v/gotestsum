@@ -2,7 +2,7 @@ Usage:
     gotestsum [flags] [--] [go test flags]
     gotestsum [command]
 
-See https://pkg.go.dev/gotest.tools/gotestsum#section-readme for detailed documentation.
+See https://pkg.go.dev/github.com/v1v/gotestsum#section-readme for detailed documentation.
 
 Flags:
       --debug                                       enabled debug logging
